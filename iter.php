@@ -49,10 +49,13 @@ if (isset($_POST['action']))
             {
                 
                 $content = file_get_contents($filename);
-                if (preg_match( '/' . $search_for . '/', $content))
-                {
-                    echo $filename . " " . ' bytes <br/>';
-                }
+		if($content)
+		{
+		        if (preg_match( '/' . $search_for . '/', $content))
+		        {
+		            echo $filename . " " . ' bytes <br/>';
+		        }
+		}
             }
         }
         else
