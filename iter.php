@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
-
-    <h1>Search In Content</h1>
+<head>
+	<title> Search Page </title>
+</head>
+<body>
+<h1>Search In Content</h1>
 <br>
 
 
@@ -70,3 +73,5 @@ if (isset($_POST['action']))
     
     
     
+</body>
+</html>
