@@ -23,7 +23,7 @@
 			
 			<br /> Content: 
 			
-			<input value="<?php echo  $_POST['value'] ? $_POST['value'] : ''; ?>" 
+			<input value="<?php echo  isset($_POST['value']) && $_POST['value'] ? $_POST['value'] : ''; ?>" 
 			type="text" value="" name="value"  > <br> <input type="submit">
 
 	</form>
